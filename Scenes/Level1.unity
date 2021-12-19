@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eee804fcf1154646a91c1e8bdf298d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReloadTime: 0.5
+  ReloadTime: 1
   deathEffect: {fileID: 1682797542}
   ffviiDeathSFX: {fileID: 8300000, guid: 511087abcfde9f44f932a0495f7fcae1, type: 3}
 --- !u!58 &29649779

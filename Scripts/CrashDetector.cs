@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CrashDetector : MonoBehaviour
 {
-    [SerializeField] float ReloadTime = 1f;
+    [SerializeField] float ReloadTime = 3f;
     [SerializeField] ParticleSystem deathEffect;
     [SerializeField] AudioClip ffviiDeathSFX;
     float isDead;
@@ -13,6 +13,7 @@ public class CrashDetector : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Ground")
         {
+            FindObjectOfType<PlayerController>().DisableControls();
             deathEffect.Play();
             if(isDead == 0){
                 GetComponent<AudioSource>().PlayOneShot(ffviiDeathSFX);
